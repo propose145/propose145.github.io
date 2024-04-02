@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, I'm Inha</title>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/032aa3cacc.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <!-- 바로 절대 경로 말고 상대 경로로 써야 됨 당연히! -->
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/design.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- 명함 -->
+        <div class="common_box card_box">
+            <div class="card_left">
+                <div class="card_job">
+                    <!-- 이름 -->
+                    <span class="name_ko">황  인  하</span>
+                    <!-- 영문이름 -->
+                    <span class="name_eng">Hwang Inha</span>
+                    <!-- 직업 -->
+                    <span class="job">웹 개발자</span>
+                </div>
+                <div class="item_list">
+                    <div class="item_type">
+                        <span>Mail.</span>
+                        <span>Site.</span>
+                    </div>
+                    <div>
+                        <!-- 메일 -->
+                        <span>cureless.7@gmail.com</span>
+                        <!-- 웹사이트 -->
+                        <span><a href="propose145.github.io">propose145.github.io</a></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card_right">
+                <div class="card_img"></div>
+            </div>
+            <div class="design_bar"></div>
+        </div>
+        <!-- SNS -->
+        <div class="common_box sns_box">
+            <!-- 여기가 아이콘을 바꾸는... https://fontawesome.com/search?p=2&o=r&m=free -->
+            <div class="middle">
+                <a class="sns_btn" href="https://github.com/propose145" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="sns_btn" href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="sns_btn" href="" target="_blank"><i class="fab fa-google"></i></a>
+                <a class="sns_btn" href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="sns_btn" href="" target="_blank"><i class="fab fa-youtube"></i></a>
+                <!-- 이력서 다운로드 -->
+                <a class="sns_btn" href="./download/resume.pdf" download="resume_황인하.pdf"><i class="fas fa-file-download"></i></a>
+            </div>
+        </div>
+        
+        
+        <div class="common_box info_box">
+            <!-- Skill -->
+            <div class="sub_box skill_box">
+                <div class="sub_title">Skills</div>
+                <div class="bar_wrap">
+                    <div class="skill_title"><strong>Web</strong></div>
+                    <div><div class="bar_border"><div class="bar_fill" style="width: 40%">40%</div></div></div>
+                </div>
+                <!-- div bar_wrap 기준으로 복사 붙여넣기 하면 하나씩 더 생김-->
+                <div class="bar_wrap">
+                    <div class="skill_title"><strong>Database</strong></div>
+                    <div><div class="bar_border"><div class="bar_fill" style="width: 30%">30%</div></div></div>
+                </div>
+
+                <div class="bar_wrap">
+                    <div class="skill_title"><strong>Java</strong></div>
+                    <div><div class="bar_border"><div class="bar_fill" style="width: 60%">60%</div></div></div>
+                </div>
+            </div>
+
+            <!-- License -->
+            <div class="sub_box">
+                <div class="sub_title">License</div>
+                <div class="item_list">
+                    <div class="item_type item_sign">
+                        <span>+ </span>
+                        <span>+ </span>
+                        <span>+ </span>
+                    </div>
+                    <div>
+                        <span>정보처리기사</span>
+                        <span>SQLD 개발자</span>
+                        <span>자격증3</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work -->
+            <div class="sub_box">
+                <div class="sub_title">Work</div>
+                <div class="item_list">
+                    <div class="item_type item_sign">
+                        <span>+ </span>
+                        <span>+ </span>
+                        <span>+ </span>
+                    </div>
+                    <div>
+                        <span>경력1</span>
+                        <span>경력2</span>
+                        <span>경력3</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <!--
+            <div class="sub_box">
+                <div class="sub_title">Education</div>
+                <div class="item_list">
+                    <div class="item_type item_sign">
+                        <span>+ </span>
+                        <span>+ </span>
+                    </div>
+                    <div>
+                        <span>교육1</span>
+                        <span>교육2</span>
+                    </div>
+                </div>
+            </div>
+            -->
+            <!-- Award -->
+            <div class="sub_box">
+                <div class="sub_title">Project</div>
+                <div class="item_list">
+                    <div class="item_type item_sign">
+                        <span>+ </span>
+                        <span>+ </span>
+                    </div>
+                    <div>
+                        <span>1인 가구를 위해 제작한 자율 주행 쓰레기통</span>
+                        <span>수상2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 배포: 우리가 개발한 사이트를 서비스 할 수 있도록 
+
+    전통적인 방법: 온-프레미스 방식
+          + 서버 구매
+          + 서버 설정
+          + 개발된 프로그램 배포 (도커 컴포우즈)
+          + 고정 IP 구매 (통신사) -> 121.134.12.57
+          + 도메인 설정 (DNS) -> www.cholong02.com
+
+    새로운 방법: 클라우드 시스템
+    기본적으로 프론트엔드만 배포 서비스를 지원하는 플랫폼
+          + netlify.com -> 꼭 사용해봐~
+          + github pages
+-->
